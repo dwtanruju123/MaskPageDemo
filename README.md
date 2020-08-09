@@ -1,6 +1,19 @@
 # MaskPageDemo
 最好用的遮罩引导页
 
+## 项目引用
+allprojects {<br>
+		repositories {<br>
+			...
+			maven { url 'https://jitpack.io' }<br>
+		}<br>
+	}<br>
+  
+  dependencies {<br>
+	        implementation 'com.github.dwtanruju123:MaskPageDemo:Tag'<br>
+	}<br>
+  
+
 ## 实现思路
 开发过程中我们经常会遇到这样的需求：第一次进入APP需要给用户引导，某些功能的按钮要高亮显示，我们最简单的做法是<br>
 让UI给我们切图，高亮的VIEW和底图整体是一张图片，我们加载这张图片就好了，但是这样会有这样的一个问题：由于安卓手机机型太多<br>
